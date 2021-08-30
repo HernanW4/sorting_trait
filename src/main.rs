@@ -1,7 +1,7 @@
-mod lib;
+mod sort;
 use core::panic;
 
-use lib::SortingConfig;
+use sort::{SortingConfig, Sort};
 use rand::Rng;
 
 
@@ -55,9 +55,9 @@ fn random_i32_list(list: &mut Vec<i32>){ //makes a random integer list
     }
 }
 fn run <'a, T:PartialOrd + Copy + Sized>(unsorted: &'a mut Vec<T>)-> Option<&'a mut [T]>{// runs the program
-    let mut config = SortingConfig::new(unsorted).unwrap();
+    let mut config = SortingConfig::new(unsorted);
     
-    config.bubble_sorting();
+    Sort::bubble_sorting(&mut config);
 
     
 
