@@ -1,6 +1,7 @@
 # sorting_algorithm
 
-A simple program that sorts a list of any type using Rust
-  -integer
-  -char
-  -float
+Sort Trait which sorts items of any list
+-integers
+-float
+-char
+
