@@ -1,4 +1,4 @@
-# sorting_algorithm
+# sorting_trait
 
 Sort Trait which sorts items of any list.
 
