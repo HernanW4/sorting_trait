@@ -1,8 +1,16 @@
 // Fast and simple sorting trait for a list
+pub trait Sort{
+    type Item;
+    fn bubble_sorting(&mut self)-> &mut [Self::Item];
+    fn swap(&mut self, index: usize, index2: usize);
+    
+
+}
 
 pub struct SortingConfig<'a,T:PartialOrd + Copy>{
     pub slice: &'a mut [T]
 }
+
 
 impl <'a, T:PartialOrd + Copy> SortingConfig<'a,T>{
     pub fn new(slice: &'a mut [T])-> SortingConfig<'a,T>{
@@ -13,16 +21,6 @@ impl <'a, T:PartialOrd + Copy> SortingConfig<'a,T>{
         self.slice
     }
 }
-
-
-pub trait Sort{
-    type Item;
-    fn bubble_sorting(&mut self)-> &mut [Self::Item];
-    fn swap(&mut self, index: usize, index2: usize);
-    
-
-}
-
 
 impl <'a, T:PartialOrd + Copy> Sort for SortingConfig<'a, T>{
     type Item = T;
