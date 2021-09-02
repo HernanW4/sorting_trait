@@ -40,7 +40,7 @@ mod tests {//TESTS
         let sorted = vec![1,2,3,4,5];
 
        
-        let new_list = Sort::bubble_sorting(&mut unsorted);
+        Sort::bubble_sorting(&mut unsorted);
 
         assert_eq!(unsorted,sorted);
 
