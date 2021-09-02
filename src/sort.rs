@@ -5,8 +5,6 @@ pub trait Sort{
     
 
 }
-//TODO:
-// QuickSort
 
 
 impl<T:PartialOrd + Copy> Sort for Vec<T>{
