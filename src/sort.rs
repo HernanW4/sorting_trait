@@ -1,7 +1,9 @@
 // Fast and simple sorting trait for a list
 pub trait Sort{
     fn bubble_sorting(&mut self);
+    fn quick_sorting(&mut self);
     fn swap(&mut self, index: usize, index2: usize);
+    fn partition(&mut self, low: usize, high: usize);
     
 
 }
@@ -17,10 +19,17 @@ impl<T:PartialOrd + Copy> Sort for Vec<T>{
                 }
             }
         }
-
         
+            
     }
 
+    fn quick_sorting(&mut self) {
+        todo!();
+    }
+
+    fn partition(&mut self, low: usize, high: usize){
+        todo!();
+    }
     fn swap(&mut self, index: usize, index2: usize) {
         let temp = self[index];
         self[index] = self[index2];
@@ -38,14 +47,18 @@ mod tests {//TESTS
     fn buble_works() {
         let mut unsorted = vec![5,2,4,1,3];
         let sorted = vec![1,2,3,4,5];
-
+        
+        
        
         Sort::bubble_sorting(&mut unsorted);
 
         assert_eq!(unsorted,sorted);
 
         
-        
+             
     }
-
+    #[test]
+    fn quick_works(){
+        todo!();
+    }
 }
