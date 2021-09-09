@@ -1,7 +1,7 @@
 mod sort;
 
 
-use sort::{Sort};
+use sort::Sort;
 use rand::Rng;
 
 fn main(){
