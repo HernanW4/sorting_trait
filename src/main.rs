@@ -26,6 +26,7 @@ fn main() {
 }
 
 fn random_i32_list(list: &mut Vec<i32>) {
+    //Makes random integer
     let mut rng = rand::thread_rng();
 
     let len = rng.gen_range(5..20);
