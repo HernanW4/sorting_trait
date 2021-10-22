@@ -1,6 +1,6 @@
 # sorting_trait
 
-Sort Trait which sorts items of any list.
+A simple Sort Trait which sorts items of any list.
 
 Sorts: integers, char, float.
 
