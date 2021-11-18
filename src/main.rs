@@ -16,7 +16,7 @@ fn main() {
 
     println!("Sorted: {:?}", &unsorted);
 
-    let mut unsorted = vec!['f', 'h', 'y', 't', 'i', 'p', 'q', 'g', 'a', 'c'];
+    let mut unsorted = vec!['f', 'h', 'y', 't', 'i', 'p', 'q', 'g', 'a', 'c', 'b'];
 
     println!("Unsorted: {:?}", unsorted);
 
